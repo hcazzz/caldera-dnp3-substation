@@ -1,4 +1,3 @@
-@ -1,176 +0,0 @@
 # DNP3 Outstation Simulator & Caldera Integration
 A DNP3-based ICS simulation for cybersecurity testing with MITRE Caldera.
 ## Description
