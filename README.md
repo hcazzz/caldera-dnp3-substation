@@ -79,23 +79,30 @@ python3 --version
 Navigate to your simulator directory:
 ```
 cd ~/dnp3sim
-python3 outstation_bridge.py
+python3 start.py
 ```
 This will:
 
 Start the simulated DNP3 outstation
 Expose the DNP3 TCP endpoint (usually port 20000)
-Log incoming master commands (including from Caldera)
+Log incoming master commands from Caldera
+Start the visualizer from viz.py
 
 
 
 ## Usage
 ### Step 1: Start the DNP3 Outstation by running this command in your outstation directory
 ```
-python3 outstation_bridge.py
+python3 start.py
 ```
 If it starts correctly, you will see terminal output showing:
-
+```
+(venv310) :~/dnp3sim$ python3 start.py
+[bridge] Preloading database (counters 0..12, analogs, binary outputs)...
+channel state change: OPENING
+[bridge] outstation ENABLED and ready on 127.0.0.1:20000
+[bridge] Addresses: Local=10, Remote=1
+```
 
 
 ### Step 2: Start Caldera (if not already running)
